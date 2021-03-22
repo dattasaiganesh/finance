@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<table>    
+<thead>
+<tr>
+<th>s.no</th>
+<th>name</th>
+
+<th>total_amount</th>
+<th>given_amount</th>
+
+<th>taken_amount</th>
+<th>City</th>
+
+<th>date</th>
+</tr>
+</thead>
+<tbody>
+<tr th:each="list : ${user}">
+<td th:text="${list.s_no}"></td>
+<td th:text="${list.name}"></td>
+
+<td th:text="${list.total_amount}"></td>
+<td th:text="${list.given_amount}"></td>
+
+<td th:text="${list.taken_amount}"></td>
+
+<td th:text="${list.city}"></td>
+<td th:text="${list.date}"></td>
+</tr>
+</tbody>     
+</table>    
+</body>
+</html>
